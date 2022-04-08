@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import com.mysql.jdbc.Connection;
 
-
+//jdbc:mysql://localhost:3306/escuela
 public class Conectar {
-    public static final String URL = "jdbc:myslq://localhost:3306/escuela?autoReconnet=true&useSSL=false";
+    public static final String URL = "jdbc:myslq://localhost:3306/escuela";
     public static final String USER = "root";
     public static final String PASSWORD = "asd1";
     

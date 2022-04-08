@@ -24,6 +24,10 @@ public class Person {
         this.gender = gender;
     }
 
+    public Person() {
+        
+    }
+
     public int getIdPerson() {
         return idPerson;
     }
@@ -87,6 +91,7 @@ public class Person {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
     
     
 }
