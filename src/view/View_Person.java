@@ -42,7 +42,7 @@ public class View_Person extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jID = new javax.swing.JTextField();
         btnSearch = new javax.swing.JButton();
         btnModify = new javax.swing.JButton();
         btnInsert = new javax.swing.JButton();
@@ -138,7 +138,7 @@ public class View_Person extends javax.swing.JFrame {
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jID, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(59, Short.MAX_VALUE))
         );
@@ -150,7 +150,7 @@ public class View_Person extends javax.swing.JFrame {
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -255,6 +255,7 @@ public class View_Person extends javax.swing.JFrame {
     public javax.swing.JTextField jDate;
     public javax.swing.JTextField jDirection;
     public javax.swing.JTextField jEmail;
+    public javax.swing.JTextField jID;
     public javax.swing.JTextField jKey;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -267,6 +268,5 @@ public class View_Person extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     public javax.swing.JTextField jPhone;
     public javax.swing.JTextField jTextField1;
-    public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
