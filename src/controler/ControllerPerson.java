@@ -32,7 +32,7 @@ public class ControllerPerson implements ActionListener {
         if (ae.getSource() == view.btnInsert){
             person.setKey(view.jKey.getText());
             person.setName(view.jName.getText());
-            person.setDirection(view.jDirection.getText());
+            person.setaddress(view.jDirection.getText());
             person.setPhone(view.jPhone.getText());
             person.setEmail(view.jPhone.getText());
             person.setDateB(Date.valueOf(view.jDate.getText()));

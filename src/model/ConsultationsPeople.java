@@ -13,10 +13,10 @@ public class ConsultationsPeople extends Conectar {
         Connection conexion = getConnection();
 
         try {
-            ps = conexion.prepareStatement("inser into person (key,name,direction,phone,email,dateB,gender) va(?,?,?,?,?,?,?)");
+            ps = conexion.prepareStatement("insert into persona (clave,nombre,domicilio,celular,email,fecha_nacimiento,genero) values (?,?,?,?,?,?,?)");
             ps.setString(1, person.getKey());
             ps.setString(2, person.getName());
-            ps.setString(3, person.getDirection());
+            ps.setString(3, person.getaddress());
             ps.setString(4, person.getPhone());
             ps.setString(5, person.getEmail());
             ps.setDate(6, person.getDateB());

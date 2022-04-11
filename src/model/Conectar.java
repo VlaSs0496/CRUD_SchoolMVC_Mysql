@@ -7,7 +7,7 @@ import com.mysql.jdbc.Connection;
 
 //jdbc:mysql://localhost:3306/escuela
 public class Conectar {
-    public static final String URL = "jdbc:myslq://localhost:3306/escuela";
+    public static final String URL = "jdbc:mysql://localhost:3306/escuela";
     public static final String USER = "root";
     public static final String PASSWORD = "asd1";
     
@@ -22,9 +22,5 @@ public class Conectar {
             System.out.println(e);
         }
         return conexion;
-    }
-
-    PreparedStatement prepareStatement(String inser_into_person_keynamedirectionphoneem) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

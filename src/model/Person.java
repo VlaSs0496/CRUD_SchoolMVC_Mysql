@@ -7,17 +7,17 @@ public class Person {
     private int idPerson;
     private String key;
     private String name;
-    private String direction;
+    private String address;
     private String phone;
     private String email;
     private Date dateB;
     private String gender;
 
-    public Person(int idPerson, String key, String name, String direction, String phone, String email, Date dateB, String gender) {
+    public Person(int idPerson, String key, String name, String address, String phone, String email, Date dateB, String gender) {
         this.idPerson = idPerson;
         this.key = key;
         this.name = name;
-        this.direction = direction;
+        this.address = address;
         this.phone = phone;
         this.email = email;
         this.dateB = dateB;
@@ -52,12 +52,12 @@ public class Person {
         this.name = name;
     }
 
-    public String getDirection() {
-        return direction;
+    public String getaddress() {
+        return address;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
+    public void setaddress(String address) {
+        this.address = address;
     }
 
     public String getPhone() {
