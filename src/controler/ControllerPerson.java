@@ -22,6 +22,7 @@ public class ControllerPerson implements ActionListener {
         view.btnClear.addActionListener(this);
         view.btnSearch.addActionListener(this);
         view.btnModify.addActionListener(this);
+        view.btnDelete.addActionListener(this);
     }
 
     public void star() {
@@ -85,6 +86,16 @@ public class ControllerPerson implements ActionListener {
                 clearBoxes();
             }else{
                 JOptionPane.showConfirmDialog(null, "could not be modified");
+                clearBoxes();
+            }
+        }
+        if (ae.getSource() == view.btnDelete){
+            person.setIdPerson(Integer.parseInt(view.jID.getText()));
+            if (model.delete(person)){
+                JOptionPane.showConfirmDialog(null, "successfully deleted");
+                clearBoxes();
+            }else{
+                JOptionPane.showConfirmDialog(null, "Error to deleted");
                 clearBoxes();
             }
         }

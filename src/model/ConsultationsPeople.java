@@ -110,5 +110,32 @@ public class ConsultationsPeople extends Conectar {
         }
 
     }
+    public boolean delete(Person person) {
+        Connection conexion = getConnection();
+
+        try {
+            ps = conexion.prepareStatement("delete from persona where idPersona=?");
+            ps.setInt(1, person.getIdPerson());
+
+            int result = ps.executeUpdate();
+
+            if (result > 0) {
+                return true;
+            } else {
+                return false;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error " + e);
+            return false;
+        } finally {
+            try {
+                conexion.close();
+            } catch (Exception e) {
+                System.out.println("Error " + e);
+            }
+        }
+
+    }
 
 }
