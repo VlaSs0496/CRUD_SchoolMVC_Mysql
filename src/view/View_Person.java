@@ -41,7 +41,7 @@ public class View_Person extends javax.swing.JFrame {
         jDate = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jGender = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
+        jSearch = new javax.swing.JTextField();
         jID = new javax.swing.JTextField();
         btnSearch = new javax.swing.JButton();
         btnModify = new javax.swing.JButton();
@@ -55,7 +55,7 @@ public class View_Person extends javax.swing.JFrame {
 
         jLabel3.setText("Name");
 
-        jLabel4.setText("Direction");
+        jLabel4.setText("Address");
 
         jLabel5.setText("Phone");
 
@@ -81,6 +81,11 @@ public class View_Person extends javax.swing.JFrame {
 
         btnSearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnSearch.setText("Search");
+        btnSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSearchActionPerformed(evt);
+            }
+        });
 
         btnModify.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnModify.setText("Modify");
@@ -122,12 +127,14 @@ public class View_Person extends javax.swing.JFrame {
                             .addComponent(jGender, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(151, 151, 151)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jID, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jID)
+                                .addGap(17, 17, 17))
                             .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGap(42, 42, 42))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnInsert, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -144,10 +151,10 @@ public class View_Person extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jID)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -182,7 +189,7 @@ public class View_Person extends javax.swing.JFrame {
                     .addComponent(btnInsert)
                     .addComponent(btnDelete)
                     .addComponent(btnClear))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(29, 29, 29))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -206,6 +213,10 @@ public class View_Person extends javax.swing.JFrame {
     private void jDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jDateActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jDateActionPerformed
+
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSearchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -264,6 +275,6 @@ public class View_Person extends javax.swing.JFrame {
     public javax.swing.JTextField jName;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JTextField jPhone;
-    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jSearch;
     // End of variables declaration//GEN-END:variables
 }

@@ -16,7 +16,6 @@ public class Conectar {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conexion = (Connection)DriverManager.getConnection(URL,USER,PASSWORD);
-            JOptionPane.showConfirmDialog(null, "Connection");
             
         } catch (Exception e) {
             System.out.println(e);
